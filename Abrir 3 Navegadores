@@ -1,0 +1,41 @@
+# Teste-De-Filtro-de-Busca-UI
+
+public class Metodos {
+
+	protected static WebDriver driver;
+
+	public void abrirNavegador(String navegador, String site) {
+
+		try {
+			if (navegador.equalsIgnoreCase("chrome")) {
+				System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver.exe");
+				driver = new ChromeDriver();
+			} else if (navegador.equalsIgnoreCase("firefox")) {
+				System.setProperty("webdriver.gecko.driver", "C:\\Driver\\geckodriver.exe");
+				driver = new FirefoxDriver();
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			} else if (navegador.equalsIgnoreCase("edge")) {
+				System.setProperty("webdriver.edge.driver", "C:\\Driver\\msedgedriver.exe");
+				driver = new EdgeDriver();
+			}
+			driver.get(site);
+			driver.manage().window().maximize();
+		} catch (Exception e) {
+			System.err.println("----- erro abrir navegador -----" + e.getMessage());
+			System.err.println("----- causa erro ------" + e.getMessage());
+		}
+	}
+	public void screenShot(String nome) throws IOException {
+
+		TakesScreenshot srcShot = ((TakesScreenshot) driver);
+		File srcFile = srcShot.getScreenshotAs(OutputType.FILE);
+		File desFile = new File("./src/carrefour/" + nome + ".png");
+		FileUtils.copyFile(srcFile, desFile);
+
+	}
+	public void fecharNav() {
+		driver.quit();
+
+	}
+
+}
