@@ -1,0 +1,62 @@
+# Teste-De-Filtro-de-Busca-UI
+
+public class Escrever extends Metodos{
+	
+	
+	public void escrever(String texto, By elemento) {
+	
+		driver.findElement(elemento).sendKeys(texto);
+		
+	}
+	public void pesqu(By elemento) {
+		
+		driver.findElement(elemento).submit();
+		
+	}
+	public void clicar(By elemento) {
+	 
+        driver.findElement(By.cssSelector("#tads > div > div > div > div.v5yQqb > a > div.CCgQ5.vCa9Yd.QfkTvb.MUxGbd.v0nnCb > span")).click();
+        
+	}
+	public void ofertadodia(By elemento) {
+		  
+       driver.findElement(By.xpath("//*[@class='vtex-menu-2-x-styledLink vtex-menu-2-x-styledLink--header-menu-links no-underline pointer t-body c-on-base pointer']")).click();
+
+	}
+	public void phone(By elemento) {
+		
+		driver.findElement(By.xpath("//*[@href='/Celulares-Smartphones-e-Smartwatches/Smartphones#crfimt=hm-tlink|carrefour|menu|campanha|smartphones|2|120820']")).click();
+	
+	}
+	public void auto(By elemento) {
+		
+		driver.findElement(By.xpath("//*[@href='/pneus-e-auto#crfimt=hm-tlink|carrefour|menu|campanha|pneus-e-auto|3|261221']")).click();
+	}
+    public void clima(By elemento) {
+    	
+    	driver.findElement(By.id("headerMenuEletrodomesticos")).click();
+    }
+	public void xi(By elemento) {
+		
+		driver.findElement(By.cssSelector("#headerMenuTvs")).click();
+	}
+	public void nobook(By elemento) {
+		
+		driver.findElement(By.xpath("//*[@href='/informatica/notebook#crfimt=hm-tlink|carrefour|menu|campanha|notebooks|6|110821']")).click();
+	}
+	public void eletrodomestico(By elemento) {
+		
+		driver.findElement(By.xpath("//*[@href='/eletrodomesticos#crfimt=hm-tlink|carrefour|menu|campanha|eletrodomesticos|7|310821']")).click();
+		
+	}
+	public void tvs(By elemento) {
+		
+		driver.findElement(By.xpath("//*[@href='/tvs-e-video/tvs#crfimt=hm-tlink|carrefour|menu|campanha|tvs|8|110821']")).click();
+	}
+	public void movei(By elemento) {
+		
+		driver.findElement(By.xpath("//*[@href='/colecao/9204?map=productClusterIds&order=OrderByTopSaleDESC#crfimt=hm-tlink|carrefour|menu|campanha|moveis|9|020222']")).click();
+
+	}
+
+}
