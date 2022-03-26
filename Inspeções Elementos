@@ -1,0 +1,81 @@
+# Teste-De-Filtro-de-Busca-UI
+
+public class Elementos {
+
+	By pesquisa = By.name("q");
+
+	public By pesquisa() {
+		return pesquisa;
+
+	}
+
+	By carrefour = By.cssSelector("#tads > div > div > div > div.v5yQqb > a > div.CCgQ5.vCa9Yd.QfkTvb.MUxGbd.v0nnCb > span");
+
+	public By carrefour() {
+		return carrefour;
+
+	}
+
+	By ofertDia = By.xpath("//*[@class='vtex-menu-2-x-styledLink vtex-menu-2-x-styledLink--header-menu-links no-underline pointer t-body c-on-base pointer']");
+
+	public By ofertDia() {
+		return ofertDia;
+
+	}
+
+	By smart = By.xpath("//*[@href='/Celulares-Smartphones-e-Smartwatches/Smartphones#crfimt=hm-tlink|carrefour|menu|campanha|smartphones|2|120820']");
+
+	public By smart() {
+		return smart;
+
+	}
+
+	By pneusauto = By.xpath("//*[@href='/pneus-e-auto#crfimt=hm-tlink|carrefour|menu|campanha|pneus-e-auto|3|261221']");
+
+	public By pneusauto() {
+		return pneusauto;
+
+	}
+
+	By climatizacao = By.id("headerMenuEletrodomesticos");
+
+	public By climatizacao() {
+		return climatizacao;
+
+	}
+
+	By xiaomi = By.cssSelector("#headerMenuTvs");
+
+	public By xiaomi() {
+		return xiaomi;
+
+	}
+
+	By noot = By.xpath("//*[@href='/informatica/notebook#crfimt=hm-tlink|carrefour|menu|campanha|notebooks|6|110821']");
+
+	public By noot() {
+		return noot;
+
+	}
+
+	By eletro = By.xpath("//*[@href='/eletrodomesticos#crfimt=hm-tlink|carrefour|menu|campanha|eletrodomesticos|7|310821']");
+
+	public By eletro() {
+		return eletro;
+
+	}
+
+	By tv = By.xpath("//*[@href='/tvs-e-video/tvs#crfimt=hm-tlink|carrefour|menu|campanha|tvs|8|110821']");
+
+	public By tv() {
+		return tv;
+
+	}
+
+	By moveis = By.xpath("//*[@href='/colecao/9204?map=productClusterIds&order=OrderByTopSaleDESC#crfimt=hm-tlink|carrefour|menu|campanha|moveis|9|020222']");
+
+	public By moveis() {
+		return moveis;
+
+	}
+}
